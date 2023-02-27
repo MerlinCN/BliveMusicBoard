@@ -1,0 +1,14 @@
+{
+    "room_id": {
+        "label": "房间号",
+        "val": "326763"
+    },
+    "song_cd": {
+        "label": "点歌冷却(秒)",
+        "val": 60
+    },
+    "fans_medal_min": {
+        "label": "点歌所需粉丝牌等级",
+        "val": 0
+    }
+}

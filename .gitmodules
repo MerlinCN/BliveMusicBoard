@@ -1,0 +1,3 @@
+[submodule "BliveMusicBoardWeb"]
+	path = BliveMusicBoardWeb
+	url = https://github.com/MerlinCN/BliveMusicBoardWeb.git
