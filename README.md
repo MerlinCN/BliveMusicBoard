@@ -12,7 +12,7 @@
 
 1. 安装 Go 和 Git
 2. 克隆此仓库：`git clone https://github.com/MerlinCN/BliveMusicBoard.git`
-3. 下载编译好的前端文件
+3. 下载编译好的前端文件 https://github.com/MerlinCN/BliveMusicBoardWeb/releases
 4. 进入项目目录：`cd BliveMusicBoard`
 5. 安装依赖：`go mod tidy`
 
@@ -24,23 +24,24 @@
 ## 代码结构
 
 - `main.go`：入口文件，定义了 HTTP 服务器和 WebSocket 服务器。
-
-- ```
-  pkg
-  ```
-
-   目录：包含了项目的核心代码。
-
+- `pkg`目录：包含了项目的核心代码。
   - `song.go`：定义了 `Song` 结构体和相关的方法，用于表示歌曲。
   - `utils.go`：定义了一些辅助结构体和常量。
   - `websocket.go`：定义了 WebSocket 相关的方法，用于与客户端通信。
+  - `danmaku.go`：监听弹幕
+  - `setting.go`：持久化设置
+
+## 接口测试
+
+使用`test.py`来进行测试
+
 
 ## 技术栈
 
 - Go
 - HTML/CSS/JavaScript
 - Vue.js
-- Gorilla WebSocket
+- etjsptcket
 
 ## 许可证
 
