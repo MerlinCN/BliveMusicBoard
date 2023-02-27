@@ -12,7 +12,7 @@
 
 1. 安装 Go 和 Git
 2. 克隆此仓库：`git clone https://github.com/MerlinCN/BliveMusicBoard.git`
-3. 下载编译好的前端文件 https://github.com/MerlinCN/BliveMusicBoardWeb/releases
+3. 下载编译好的前端文件 `https://github.com/MerlinCN/BliveMusicBoardWeb/releases`
 4. 进入项目目录：`cd BliveMusicBoard`
 5. 安装依赖：`go mod tidy`
 
