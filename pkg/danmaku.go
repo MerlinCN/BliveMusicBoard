@@ -64,8 +64,8 @@ func checkCD(uid int) int {
 	for _, song := range Songs {
 		if song.UID == uid {
 			lastSongInterval := int(time.Since(song.RequestedAt).Seconds()) //历史点歌时间和现在的间隔（秒）
-			if lastSongInterval < GSetting.SongCd.Val.(int) {
-				return GSetting.SongCd.Val.(int) - lastSongInterval
+			if lastSongInterval < int(GSetting.SongCd.Val.(float64)) {
+				return int(GSetting.SongCd.Val.(float64)) - lastSongInterval
 			}
 		}
 	}
