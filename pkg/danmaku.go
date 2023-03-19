@@ -49,7 +49,7 @@ func handleSongRequest(danmaku *message.Danmaku) {
 		return
 	}
 	songName := match[1]
-	history := checkDuplicate(songName)
+	history := checkHistory(songName)
 	if history != nil {
 		msg := fmt.Sprintf("今天已经点过%s咯！，在%s由%s点\n", history.Name, history.RequestedAtStr, history.User)
 		log.Printf(msg)
@@ -72,10 +72,13 @@ func checkCD(uid int) int {
 	return 0
 }
 
-func checkDuplicate(name string) *Song {
+func checkHistory(name string) *Song {
 	for _, song := range HistorySongs {
 		if song.Name == name {
-			return &song
+			songInterval := int(time.Since(song.RequestedAt).Seconds())
+			if songInterval <= 86400 {
+				return &song
+			}
 		}
 	}
 	return nil
