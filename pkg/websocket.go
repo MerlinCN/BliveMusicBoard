@@ -60,6 +60,7 @@ func handleMessages() {
 
 func SyncSongs() {
 	opcode := "sync_songs "
+	GSync.Length = len(*GSync.Data)
 	data, err := json.Marshal(GSync)
 	if err != nil {
 		log.Fatal(err)
