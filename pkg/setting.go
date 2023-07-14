@@ -69,7 +69,7 @@ func SaveSetting() {
 
 	if GSetting.RoomId.Val.(string) != RoomIdCache { //重置弹幕监听
 		RoomIdCache = GSetting.RoomId.Val.(string)
-		go SetDanmaku(GSetting.RoomId.Val.(string))
+		go SetDanmaku(GSetting.RoomId.Val.(string), "1")
 	}
 
 }

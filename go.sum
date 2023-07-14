@@ -1,5 +1,7 @@
 github.com/Akegarasu/blivedm-go v1.3.0 h1:PYnF4DP/FnkyElpBq+Q594N9rTmPZ0GdCgQkGRT4wvw=
 github.com/Akegarasu/blivedm-go v1.3.0/go.mod h1:jgljFT4+aXeNDc/fHo7HbkE/SeQZQC5vi5ITWuhmXrM=
+github.com/Akegarasu/blivedm-go v1.3.1 h1:llIN6P1mLcUPhjrR1s52OxykO1onAupfhZMvQfc0SDA=
+github.com/Akegarasu/blivedm-go v1.3.1/go.mod h1:RFptWbxb1pd3txqbIPAcGxZGsSQ+qO9wmHQQzJaGPRg=
 github.com/andybalholm/brotli v1.0.4 h1:V7DdXeJtZscaqfNuAdSRuRFzuiKlHSC/Zh3zl9qY3JY=
 github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
@@ -23,5 +25,6 @@ github.com/tidwall/match v1.1.1/go.mod h1:eRSPERbgtNPcGhD8UCthc6PmLEQXEWd3PRB5JT
 github.com/tidwall/pretty v1.2.0 h1:RWIZEg2iJ8/g6fDDYzMpobmaoGh5OLl4AXtGUGPcqCs=
 github.com/tidwall/pretty v1.2.0/go.mod h1:ITEVvHYasfjBbM0u2Pg8T2nJnzm8xPwvNhhsoaGGjNU=
 golang.org/x/sys v0.0.0-20191026070338-33540a1f6037/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20210423082822-04245dca01da/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.10.0 h1:SqMFp9UcQJZa+pmYuAKjd9xq1f0j5rLcDIk0mj4qAsA=
 golang.org/x/sys v0.10.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
