@@ -3,7 +3,7 @@ module BliveMusicBoard
 go 1.18
 
 require (
-	github.com/Akegarasu/blivedm-go v1.3.0
+	github.com/Akegarasu/blivedm-go v1.3.1
 	github.com/gorilla/handlers v1.5.1
 	github.com/gorilla/websocket v1.4.2
 

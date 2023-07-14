@@ -2,17 +2,18 @@ package pkg
 
 import (
 	"fmt"
-	"github.com/Akegarasu/blivedm-go/client"
-	"github.com/Akegarasu/blivedm-go/message"
 	"log"
 	"regexp"
 	"time"
+
+	"github.com/Akegarasu/blivedm-go/client"
+	"github.com/Akegarasu/blivedm-go/message"
 )
 
 var c *client.Client
 
-func SetDanmaku(RoomId string) {
-	c = client.NewClient(RoomId) //关注芋艿谢谢喵
+func SetDanmaku(RoomId string, UId string) {
+	c = client.NewClient(RoomId, UId) //关注芋艿谢谢喵
 	c.OnDanmaku(handleSongRequest)
 
 	err := c.Start()

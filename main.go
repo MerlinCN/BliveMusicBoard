@@ -61,7 +61,7 @@ func main() {
 	log.Printf("后台管理界面 http://localhost:%s/admin \n", PORT)
 	log.Println("关注芋艿谢谢喵~ https://live.bilibili.com/326763")
 	//初始化弹幕监听
-	go pkg.SetDanmaku(pkg.GSetting.RoomId.Val.(string))
+	go pkg.SetDanmaku(pkg.GSetting.RoomId.Val.(string), "1")
 
 	// 使用 log 包启动服务器，如果启动失败，程序会直接退出
 	go log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", PORT), handler))
